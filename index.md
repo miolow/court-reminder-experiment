@@ -32,6 +32,7 @@ In this study, we utilize the multi-arm stepped-wedge cluster randomizaed design
 | Group D | 0        | 0        | 1        | 1        | 1        | 1        |
 | Group E | 0        | 0        | 2        | 2        | 2        | 2        |
 | Group F | 0        | 0        | 3        | 3        | 3        | 3        |
+
 _Note: 0 refers to control group; 1 refers to text reminders only; 2 refers to email reminders only; 3 refers to both email and text reminders. _
 
 ## Project Status
