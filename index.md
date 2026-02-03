@@ -16,3 +16,12 @@ This project reframes it into a UX problem and examine how courts communicate ex
 4. Does providing **courthouse directions** improve attendance?
 5. How can we evaluate these interventions ethically in real court settings?
 
+## Study Design
+Insert 
+
+## Project Status
+- Study design: ✅ complete  
+- Court recruitment: 🟡 in progress  
+- Implementation: ⏳ upcoming  
+- Analysis & results: 🔜 future update
+
