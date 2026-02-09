@@ -12,28 +12,26 @@ This project reframes it into a UX problem and examine how courts communicate ex
 ## Research Questions
 1. Do reminder messages reduce failure to appear?
 2. How does **frequency** of reminders affect outcomes?
-3. How do **communication modes** (e.g., text, email, or both) compare?
-4. Does providing **courthouse directions** improve attendance?
-5. How can we evaluate these interventions ethically in real court settings?
+3. How can we evaluate these interventions ethically in real court settings?
 
 ## Study Design
-There are a total of three proposed experimental designs for studies examining key factors shown to influence failure to appear rates: format of reminders (email or text), frequency (once a week or twice a week), and the provision of courthouse directions.
-
-Another important issue to note is that because we are not able to randomly assign a selected group of people into a traditional control group, we opted for a cluster-type design. Under this design, instead of randomly assigning people to either receive treatment or not, we randomly assign courts to the various treatment group. In other words, randomization is now happening on the court level rather than individual level. We utilize the stepped-wedge experimental design and its variations for our purposes. The implications of this design is discussed further down below. 
+An important issue to note is that because we are not able to randomly assign a selected group of people into a traditional control group, we opted for a stepped-wedge design. Under this design, instead of randomly assigning people to either receive treatment or not, we randomly assign courts to the various treatment group. Then we stagger the implementation of the reminders to the courts randomly. This means that some courts will start the experiment first while others wait and stay in the control condition. After a period of time, they too will also receive treatment. This ensures that we do not withhold anyone from treatment just because we needed a control group, thus bypassing that ethical concern. 
 
 ### Study 1: Format of Reminders
-In this study, we utilize the multi-arm stepped-wedge cluster randomizaed design. Courts will be randomized to different groups. Each group will have a reminder format (no reminder, text reminders, email reminders, or both text and email reminders), and a rollout timing that determines when they transition from control to an active reminder condition. All groups will begin in the control condition and transition into their assigned reminder frequency at staggered time points, after which they remain in that condition for the remainder of the study period. 
+In this study, we utilize the multi-arm stepped-wedge cluster randomizaed design. Courts will be randomized to different groups. All groups will start as control conditions at Period 1. During Period 2, only courts in Group A will receive treatment, specifically the baseline reminder treatment. Then in Period 3, Group B will join Group A in receiving the baseline reminder treatment while the rest still remain in the control condition. Once we get to Period 4, both Group B and C will receive baseline reminders while Group A transitions to once-weekly reminders. This pattern repeats until all groups receive some form of treatment, with most groups receiving increasingly intensive reminders (i.e., moving from baseline to once-weekly then to twice-weekly). 
 
-| Group   | Period 1 | Period 2 | Period 3 | Period 4 | Period 5 | Period 6 |
-|---------|----------|----------|----------|----------|----------|----------|
-| Group A | 0        | 1        | 1        | 1        | 1        | 1        |
-| Group B | 0        | 2        | 2        | 2        | 2        | 2        |
-| Group C | 0        | 3        | 3        | 3        | 3        | 3        |
-| Group D | 0        | 0        | 1        | 1        | 1        | 1        |
-| Group E | 0        | 0        | 2        | 2        | 2        | 2        |
-| Group F | 0        | 0        | 3        | 3        | 3        | 3        |
+| Group   | Period 1 | Period 2 | Period 3 | Period 4 | Period 5 | Period 6 | Period 7 |
+|---------|----------|----------|----------|----------|----------|----------|----------|
+| Group A | 0        | 1        | 1        | 2        | 2        | 3        | 3        |
+| Group B | 0        | 0        | 1        | 1        | 2        | 2        | 3        |
+| Group C | 0        | 0        | 0        | 1        | 1        | 2        | 2        |
+| Group D | 0        | 0        | 0        | 0        | 1        | 1        | 2        |
+| Group E | 0        | 0        | 0        | 0        | 0        | 1        | 1        |
+*Note: 0 refers to control group; 1 refers to baseline reminders only; 2 refers to once-weekly reminders only; 3 refers to twice-weekly reminders.*
 
-*Note: 0 refers to control group; 1 refers to text reminders only; 2 refers to email reminders only; 3 refers to both email and text reminders.*
+## Analysis of Results
+The experiment will be analyzed with a generalized linear model with court and month fixed effects so that causal identification comes from within-court changes in reminder exposure over time while controlling for system-wide or time shocks. The resulting estimated coefficients will reflect changes in FTA and detention rates that are attributable to changes in reminder dose, net of both court-specific and time-specific confounds. 
+
 
 ## Project Status
 - Study design: ✅ complete  
