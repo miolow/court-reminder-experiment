@@ -5,9 +5,11 @@
 People often miss court appearances not because they are unwilling or defiant, but because court systems are confusing, intimidating, and easy to forget. When a court date is missed, the consequences can include arrest warrants, detention, and cascading harms, especially on low-income individuals. This project documents the design and decision-making process behind a large-scale court reminder field experiment currently in recruitment and pre-implementation.
 
 ## Problem Statement
-Failure to appear (FTA) in court is a common and costly problem for courts and communities. Traditional responses often treat missed appearance as willful noncompliance, rather than as a usability and communication failure issue. When attempting to estimate the causal impact of reminder interventions through large-scale field experiments, this framing introduces a critical ethical constraint, that is, maintaining a traditional control group would require withholding reimnders from a randomly selected group of individuals. This is unethical because it potentially exposes them to avoidable harm within the justice system. 
+Traditionally, failure to appear (FTA) in court and missed dates is viewed as willful noncompliance. This framing overlooks a critical reality, that court systems are complex, intimidating, and poorly designed for the people navigating them. 
 
-This project reframes it into a UX problem and examine how courts communicate expectations, timing, and logistics to people navigating an intimidating system. 
+This project reframes FTA as a usability problem and investigates whether reminder intervention, particularly frequency of those reminders, can help individuals successfully attend court. However, evaluating such interventions through a randomized controlled trial introduces an ethical challenge. A traditional RCT requires a control group that receives no treatment, which in this context could expose individuals to avoidable harm, including arrest warrants and detention.
+
+To address this concern, we employ a stepped-wedge randomized experiment that ensures all participants will eventually receive reminders while still allowing for causal evaluation. This approach enables us to study how reminder presence and frequency affect court attendance, while respecting ethical constraints inherent to the justice system. 
 
 ## Research Questions
 1. Do reminder messages reduce failure to appear?
