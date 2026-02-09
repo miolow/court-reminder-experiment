@@ -17,11 +17,6 @@ To address this concern, we employ a stepped-wedge randomized experiment that en
 3. How can we evaluate these interventions ethically in real court settings?
 
 ## Study Design
-An important issue to note is that because we are not able to randomly assign a selected group of people into a traditional control group, we opted for a stepped-wedge design. Under this design, instead of randomly assigning people to either receive treatment or not, we randomly assign courts to the various treatment group. Then we stagger the implementation of the reminders to the courts randomly. This means that some courts will start the experiment first while others wait and stay in the control condition. After a period of time, they too will also receive treatment. This ensures that we do not withhold anyone from treatment just because we needed a control group, thus bypassing that ethical concern. 
-
-### Study 1: Format of Reminders
-In this study, we utilize the multi-arm stepped-wedge cluster randomizaed design. Courts will be randomized to different groups. All groups will start as control conditions at Period 1. During Period 2, only courts in Group A will receive treatment, specifically the baseline reminder treatment. Then in Period 3, Group B will join Group A in receiving the baseline reminder treatment while the rest still remain in the control condition. Once we get to Period 4, both Group B and C will receive baseline reminders while Group A transitions to once-weekly reminders. This pattern repeats until all groups receive some form of treatment, with most groups receiving increasingly intensive reminders (i.e., moving from baseline to once-weekly then to twice-weekly). 
-
 | Group   | Period 1 | Period 2 | Period 3 | Period 4 | Period 5 | Period 6 | Period 7 |
 |---------|----------|----------|----------|----------|----------|----------|----------|
 | Group A | 0        | 1        | 1        | 2        | 2        | 3        | 3        |
@@ -31,9 +26,22 @@ In this study, we utilize the multi-arm stepped-wedge cluster randomizaed design
 | Group E | 0        | 0        | 0        | 0        | 0        | 1        | 1        |
 *Note: 0 refers to control group; 1 refers to baseline reminders only; 2 refers to once-weekly reminders only; 3 refers to twice-weekly reminders.*
 
-## Analysis of Results
-The experiment will be analyzed with a generalized linear model with court and month fixed effects so that causal identification comes from within-court changes in reminder exposure over time while controlling for system-wide or time shocks. The resulting estimated coefficients will reflect changes in FTA and detention rates that are attributable to changes in reminder dose, net of both court-specific and time-specific confounds. 
+An important issue to note is that because we are not able to randomly assign a selected group of people into a traditional control group, we opted for a stepped-wedge design. Under this design, instead of randomly assigning people to either receive treatment or not, we randomly assign courts to the various treatment group. Then we stagger the implementation of the reminders to the courts randomly. This means that some courts will start the experiment first while others wait and stay in the control condition. After a period of time, they too will also receive treatment. This ensures that we do not withhold anyone from treatment just because we needed a control group, thus bypassing that ethical concern. 
 
+To further illustrate the design, all groups will start as control conditions at Period 1. During Period 2, only courts in Group A will receive the baseline reminder treatment. Baseline reminders consists of a single reminder sent prior to the court date, reflecting current best practices used by many courts. Then in Period 3, Group B will join Group A in receiving the baseline reminder treatment while the rest still remain in the control condition. Once we get to Period 4, both Group B and C will receive baseline reminders while Group A transitions to once-weekly reminders. This pattern repeats until all groups receive some form of treatment, with most groups receiving increasingly intensive reminders (i.e., moving from baseline to once-weekly then to twice-weekly). 
+
+### Power and Feasibility 
+Because this study operates under real-world constraints, power calculations were used to balance statistical sensitivity with ethical and operational feasibility. Using anticipated court participation, the study is powered to detect modest but policy relevant reductions in failure to appear. 
+
+
+## Analysis of Results
+The experiment will be analyzed with a generalized linear model with court and month fixed effects so that causal identification comes from within-court changes in reminder exposure over time while controlling for system-wide or time shocks. The primary outcome is failure to appear. The resulting estimated coefficients will reflect changes in FTA and detention rates that are attributable to changes in reminder dose, net of both court-specific and time-specific confounds. 
+
+Results will directly inform court communication policies by identifying the minimum reminder intensity needed to reduce missed appearances without increasing administrative burden. 
+
+## My Role
+## My Role
+I led the study design, ethical review framing, randomization strategy, and analysis plan, working closely with court stakeholders to ensure feasibility and compliance with operational constraints.
 
 ## Project Status
 - Study design: ✅ complete  
