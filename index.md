@@ -24,6 +24,7 @@ To address this concern, we employ a stepped-wedge randomized experiment that en
 | Group C | 0        | 0        | 0        | 1        | 1        | 2        | 2        |
 | Group D | 0        | 0        | 0        | 0        | 1        | 1        | 2        |
 | Group E | 0        | 0        | 0        | 0        | 0        | 1        | 1        |
+
 *Note: 0 refers to control group; 1 refers to baseline reminders only; 2 refers to once-weekly reminders only; 3 refers to twice-weekly reminders.*
 
 An important issue to note is that because we are not able to randomly assign a selected group of people into a traditional control group, we opted for a stepped-wedge design. Under this design, instead of randomly assigning people to either receive treatment or not, we randomly assign courts to the various treatment group. Then we stagger the implementation of the reminders to the courts randomly. This means that some courts will start the experiment first while others wait and stay in the control condition. After a period of time, they too will also receive treatment. This ensures that we do not withhold anyone from treatment just because we needed a control group, thus bypassing that ethical concern. 
